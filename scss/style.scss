@@ -23,33 +23,87 @@
   font-style: normal;
 }
 //Шрифты
-.cont {
-  max-width: 90%;
+body {
+  font-family: 'PTSans', Arial;
+}
+.header {
+  max-width: 870px;
   margin: 0 auto;
-  border: 1px solid rgb(39, 63, 63);
-  height: 100%;
-  .par {
-    display: flex;
-    border: 1px solid cyan;
-    font-size: 30px;
-    height: 50%;
-    div {
-      display: flex;
-      color: rgba(255, 255, 255, 0.856);
-      font-family: "Federant", sans-serif;
-      justify-content: flex-end;
-      padding-right: 5%;
-      align-items: center;
-      flex: 1 1 50%;
-      border: 1px solid rgb(26, 116, 66);
-      //font-style: oblique;
-      background: url(../src/87661.jpg) center center/cover no-repeat;
-      &:last-child {
-        color: rgb(235, 55, 55);
-        justify-content: flex-start;
-        padding-left: 5%;
-        background: url(../src/903320.jpg) center center/cover no-repeat;
-      }
-    }
+}
+.header-block {
+  padding-top: 3%;
+  height: 180px;
+}
+.header__line {
+  display:flex;
+  justify-content: space-between;
+}
+.header__lang__cont {
+  display:flex;
+  width: 10%;
+  justify-content: space-between;
+}
+.header__lang {
+  font-family: "Bebas", Arial, Helvetica, sans-serif;
+  line-height: 25px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0 10px 0 10px;
+  color: #000;
+  &:last-child {
+    padding-left: 9px;
+  }
+  &:active {
+    background-color: #000;
+    color: #fff;
+  }
+}
+.order {
+  font-family: "Bebas";
+  font-size: 16px;
+  text-decoration: underline;
+  line-height: 25px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  margin-right: -5px;;
+  white-space: nowrap;
+  text-transform: uppercase;
+  color: #000000;
+  @media (max-width: 900px){
+    margin-right: 2%;
+  }
+}
+.header__line_2 {
+  margin-left: 1.5%;
+}
+.header__nav {
+  font-family: "Bebas";
+  display: flex;
+  justify-content: space-between;
+  padding: 3% 0 0 0;
+  max-width: 260px;
+  flex: 1 1 30%;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+}
+.header__nav_left {
+  padding-right: 0.5%;
+}
+.header__logo {
+  margin-top: -2%;
+  padding: 0 2% 0 2%;
+  @media (max-width: 900px){
+    margin-top: -4%;
+  }
+}
+.header__nav_right {
+  margin-right: -0.5%;
+  @media (max-width: 900px){
+    margin-right: 2%;
   }
 }
