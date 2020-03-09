@@ -75,8 +75,8 @@ h1, h2, h3, h4, h5, h6 {
 /*-------------*/
 @font-face {
   font-family: 'Akzidenz';
-  src: url("../fonts/Akzidenz-grotesk-black.eot");
-  src: local("☺"), url("../fonts/Akzidenz-grotesk-black.woff") format("woff"), url("../fonts/Akzidenz-grotesk-black.ttf") format("truetype"), url("../fonts/Akzidenz-grotesk-black.svg") format("svg");
+  src: url("../fonts/AkzidenzGroteskBQCondensedBold.eot");
+  src: local("☺"), url("../fonts/AkzidenzGroteskBQCondensedBold.woff") format("woff"), url("../fonts/AkzidenzGroteskBQCondensedBold.ttf") format("truetype"), url("../fonts/AkzidenzGroteskBQCondensedBold.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -108,7 +108,7 @@ body {
 
 .header-block {
   padding-top: 3%;
-  height: 180px;
+  height: 175px;
 }
 
 .header__line {
@@ -173,7 +173,7 @@ body {
 }
 
 .header__nav {
-  font-family: "Bebas";
+  font-family: Akzidenz;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -216,4 +216,52 @@ body {
   .header__nav_right {
     margin-right: 2%;
   }
+}
+
+.catering {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: 425px;
+  background-color: #000;
+}
+
+.catering__column {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  max-width: 50%;
+}
+
+.catering__img {
+  background: url("../src/catering.jpg");
+  height: 425px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+}
+
+.catering__content {
+  padding: 5.7% 0 0 4.4%;
+}
+
+.catering__h {
+  font-family: "Akzidenz";
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  max-width: 200px;
+}
+
+.catering__text {
+  font-family: "PTSans";
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #ffffff;
+  max-width: 303px;
+  padding: 7% 0 0 0;
 }
