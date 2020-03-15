@@ -135,16 +135,21 @@
     </div>
     <div class="where">
         <div class="map"></div>
-        <div class="form">
-            <div class="form__h">get in touch</div>
-            <form action="post">
-                <div class="form__name"><input autocomplete="off" type="text" name="name" data-value="Name"></div>
-                <div class="form__phone"><input type="email" name="mail_phone"></div>
-                <div class="form__text"><input type="text" name="text"></div>
-                <button type="submit" value="SEND MESSAGE">
-            </form>
+        <div class="form__area">
+            <div class="form__cage">
+                <div class="form__h" method="get">get in touch</div>
+                <form action="#" method="POST" enctype="multipart/form-data" class="form__body">
+                    <div><input class="form__name form__input" autocomplete="off" type="text" name="name" placeholder="Name"></div>
+                    <div><input  class="form__phone form__input" type="text" name="mail_phone" placeholder="E-mail or phone number"></div>
+                    <div><textarea class="form__text form__input" name="text" placeholder="Your message"></textarea></textarea></div>
+                    <button type="submit" class="btn">SEND MESSAGE</button>
+                </form>
+            </div>
         </div>
     </div>
-    
+    <div class="footer">
+        <div class="copyright">© PrimeOne Catering 2014. <span> Terms & Conditions</span></div>
+        <div class="footer__logo"><img src="src/logo_2.png" alt="Logo"></div>
+    </div>
 </body>
 </html>
