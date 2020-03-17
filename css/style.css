@@ -102,10 +102,6 @@ body {
   font-family: 'PTSans', Arial;
   margin-left: -0.6%;
   height: 100%;
-  margin: 0;
-  padding: 0;
-  min-width: 320px;
-  position: relative;
   color: #000;
 }
 
@@ -455,7 +451,6 @@ body {
       flex-wrap: wrap;
   margin: 0 auto;
   max-width: 855px;
-  border: 1px solid #7bff00;
   padding-bottom: 4%;
 }
 
@@ -538,6 +533,10 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.hello__half a {
+  color: #000;
 }
 
 .hello__map {
